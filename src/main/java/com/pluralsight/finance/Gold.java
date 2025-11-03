@@ -7,8 +7,14 @@ public class Gold extends FixedAsset {
         super(name, marketValue);
         this.weight = weight;
     }
+
     @Override
-    public double getValue(){
+    public double getValue() {
         return getMarketValue() * weight;
+    }
+
+    @Override
+    public String toString() {
+        return getName() + " (Gold, " + weight + " oz) - Value: $" + getValue();
     }
 }

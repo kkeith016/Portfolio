@@ -23,4 +23,9 @@ public class CreditCard implements Valuable {
     public double getValue() {
         return -balance; // Debt has negative value
     }
+
+    @Override
+    public String toString() {
+        return name + " (CreditCard) - Balance: $" + balance;
+    }
 }

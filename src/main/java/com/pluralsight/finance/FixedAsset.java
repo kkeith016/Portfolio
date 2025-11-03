@@ -21,4 +21,9 @@ public abstract class FixedAsset implements Valuable {
     public double getValue() {
         return marketValue;
     }
+
+    @Override
+    public String toString() {
+        return name + " - Value: $" + getValue();
+    }
 }
